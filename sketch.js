@@ -5,11 +5,14 @@ let myDiv;
 function preload() {
 	myMobileNet = ml5.imageClassifier('MobileNet');
 	myVideo = createCapture(VIDEO);
+	myVideo.parent('#wrapper')
 }
 
 function setup() {
 	myMobileNet.classify(myVideo, gotResults);
 	myDiv = createDiv('...');
+	myDiv.parent('#wrapper');
+	myDiv.addClass('label');
 	// console.log('my mobileNet', myMobileNet);
 }
 
