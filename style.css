@@ -1,5 +1,25 @@
+body {
+	background: #ff9494;
+	font-family: 'Barriecito', cursive;
+	color: #fff;
+}
+
+#wrapper {
+	margin: 90px auto;
+	max-width: 600px;
+	text-align: center;
+}
+
+.label {
+	margin-top: 10px;
+	font-family: 'Roboto Mono', monospace;
+}
+
 video {
 	max-height: 300px;
+	border-radius: 50px;
+	border: 1px dotted white;
+	margin: 10px;
 	width: inherit;
 	margin: 0;
 	padding: 0;
